@@ -6,8 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button;
 
-
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,9 +17,6 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             val intent = Intent(this, PrincipalActivity::class.java)
             startActivity(intent)
-
         }
     }
-
-
 }
