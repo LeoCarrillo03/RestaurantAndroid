@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrincipalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginTop="45dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="VALLACALDO RESTAURANT"
+                android:textColor="#F3BABA"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="438dp"
+            android:layout_height="159dp"
+            android:layout_gravity="center"
+            android:background="@drawable/vallacaldo"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:height="100dp"
+                android:backgroundTint="#B7273C"
+                android:fontFamily="@font/alice"
+                android:text="MENUS"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnBebidas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:height="100dp"
+                android:backgroundTint="#B7273C"
+                android:fontFamily="@font/alice"
+                android:text="BEBIDAS"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/butAmbiente"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:height="100dp"
+                android:backgroundTint="#B8273C"
+                android:fontFamily="@font/alice"
+                android:text="AMBIENTES"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnUbicacion"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:height="100dp"
+                android:backgroundTint="#B8273C"
+                android:fontFamily="@font/alice"
+                android:text="UBICACION"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BtnReseñas"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:height="100dp"
+                android:backgroundTint="#B8273C"
+                android:fontFamily="@font/alice"
+                android:text="RESEÑAS"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnNosotros"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:height="100dp"
+                android:backgroundTint="#B8273C"
+                android:fontFamily="@font/alice"
+                android:text="NOSOTROS"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
