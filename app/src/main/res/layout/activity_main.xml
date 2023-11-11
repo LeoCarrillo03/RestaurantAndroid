@@ -43,6 +43,7 @@
             android:layout_height="203dp"
             android:layout_gravity="center"
             android:layout_marginBottom="25dp"
+            android:background="#00BD2C2C"
             app:srcCompat="@drawable/logo" />
 
         <LinearLayout
