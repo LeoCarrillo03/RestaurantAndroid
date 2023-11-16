@@ -10,8 +10,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo"
-        android:orientation="vertical">
+        android:layout_margin="-15dp"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:backgroundTint="#018878"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,21 +26,16 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="62dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="32dp"
                 android:layout_weight="1"
+                android:background="@android:drawable/checkbox_off_background"
+                android:backgroundTint="#1CBCAB"
                 android:fontFamily="sans-serif-black"
                 android:gravity="center"
                 android:text="VAYACALDO RESTAURANT"
-                android:textColor="#F3BABA"
+                android:textColor="#FFFFFF"
                 android:textSize="26sp" />
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="438dp"
-            android:layout_height="159dp"
-            android:layout_gravity="center"
-            android:background="@drawable/vallacaldo"
-            android:orientation="horizontal"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,10 +49,10 @@
                 android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:height="100dp"
-                android:backgroundTint="#B7273C"
-                android:fontFamily="@font/alice"
+                android:backgroundTint="#E3F3F1"
+                android:fontFamily="sans-serif-black"
                 android:text="MENUS"
-                android:textColor="@color/white"
+                android:textColor="#018778"
                 android:textSize="20sp" />
 
             <Button
@@ -63,9 +62,10 @@
                 android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:height="100dp"
-                android:backgroundTint="#B7273C"
-                android:fontFamily="@font/alice"
+                android:backgroundTint="@color/white"
+                android:fontFamily="sans-serif-black"
                 android:text="BEBIDAS"
+                android:textColor="#018778"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -81,9 +81,10 @@
                 android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:height="100dp"
-                android:backgroundTint="#B8273C"
-                android:fontFamily="@font/alice"
-                android:text="AMBIENTES"
+                android:backgroundTint="#E3F3F1"
+                android:fontFamily="sans-serif-black"
+                android:text="RESERVAS"
+                android:textColor="#018778"
                 android:textSize="20sp" />
 
             <Button
@@ -93,15 +94,17 @@
                 android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:height="100dp"
-                android:backgroundTint="#B8273C"
-                android:fontFamily="@font/alice"
+                android:backgroundTint="#E3F3F1"
+                android:fontFamily="sans-serif-black"
                 android:text="UBICACION"
+                android:textColor="#018778"
                 android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="130dp"
+            android:backgroundTint="#018978"
             android:orientation="horizontal">
 
             <Button
@@ -111,9 +114,10 @@
                 android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:height="100dp"
-                android:backgroundTint="#B8273C"
-                android:fontFamily="@font/alice"
+                android:backgroundTint="#E3F3F1"
+                android:fontFamily="sans-serif-black"
                 android:text="RESEÑAS"
+                android:textColor="#018778"
                 android:textSize="20sp" />
 
             <Button
@@ -123,10 +127,33 @@
                 android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:height="100dp"
-                android:backgroundTint="#B8273C"
-                android:fontFamily="@font/alice"
+                android:backgroundTint="#E3F3F1"
+                android:fontFamily="sans-serif-black"
                 android:text="NOSOTROS"
+                android:textColor="#018778"
                 android:textSize="20sp" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:background="@android:drawable/bottom_bar"
+            android:backgroundTint="#041E22"
+            android:backgroundTintMode="add"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                style="@style/TextAppearance.AppCompat.Widget.Button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="#018778"
+                android:padding="10dp"
+                app:srcCompat="@drawable/vallacaldo" />
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
