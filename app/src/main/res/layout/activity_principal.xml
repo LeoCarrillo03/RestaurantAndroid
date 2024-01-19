@@ -32,7 +32,7 @@
                 android:backgroundTint="#1CBCAB"
                 android:fontFamily="sans-serif-black"
                 android:gravity="center"
-                android:text="VAYACALDO RESTAURANT"
+                android:text="VAYACALDO RESTAURANTE"
                 android:textColor="#FFFFFF"
                 android:textSize="26sp" />
         </LinearLayout>
@@ -115,8 +115,8 @@
                 android:id="@+id/btnNosotros"
                 android:layout_width="294dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
-                android:layout_marginEnd="60dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginEnd="55dp"
                 android:layout_weight="1"
                 android:height="100dp"
                 android:backgroundTint="#E3F3F1"

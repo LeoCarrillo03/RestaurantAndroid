@@ -1,0 +1,4 @@
+<resources>
+    <color name="colorNormal">#4285F4</color> <!-- Color normal del botn -->
+    <color name="colorPressed">#3367D6</color> <!-- Color del botn al presionar -->
+</resources>
