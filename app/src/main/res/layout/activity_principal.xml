@@ -45,14 +45,15 @@
             <Button
                 android:id="@+id/btnMenu"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:height="100dp"
-                android:backgroundTint="#E3F3F1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon_menu"
                 android:fontFamily="sans-serif-black"
                 android:text="MENUS"
-                android:textColor="#018778"
+                android:textColor="#018678"
                 android:textSize="20sp" />
 
             <Button
@@ -62,7 +63,8 @@
                 android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:height="100dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon_bebida"
                 android:fontFamily="sans-serif-black"
                 android:text="BEBIDAS"
                 android:textColor="#018778"
@@ -82,6 +84,7 @@
                 android:layout_weight="1"
                 android:height="100dp"
                 android:backgroundTint="#E3F3F1"
+                android:drawableTop="@drawable/icon_reserva"
                 android:fontFamily="sans-serif-black"
                 android:text="RESERVAS"
                 android:textColor="#018778"
@@ -95,6 +98,7 @@
                 android:layout_weight="1"
                 android:height="100dp"
                 android:backgroundTint="#E3F3F1"
+                android:drawableTop="@drawable/icon_mapa"
                 android:fontFamily="sans-serif-black"
                 android:text="UBICACION"
                 android:textColor="#018778"
@@ -108,26 +112,15 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/BtnReseñas"
-                android:layout_width="112dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:layout_weight="1"
-                android:height="100dp"
-                android:backgroundTint="#E3F3F1"
-                android:fontFamily="sans-serif-black"
-                android:text="RESEÑAS"
-                android:textColor="#018778"
-                android:textSize="20sp" />
-
-            <Button
                 android:id="@+id/btnNosotros"
-                android:layout_width="118dp"
+                android:layout_width="294dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
                 android:layout_weight="1"
                 android:height="100dp"
                 android:backgroundTint="#E3F3F1"
+                android:drawableLeft="@drawable/icon_nosotros"
                 android:fontFamily="sans-serif-black"
                 android:text="NOSOTROS"
                 android:textColor="#018778"
