@@ -1,0 +1,54 @@
+<!-- res/layout/summary_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView para mostrar el resumen de la boleta -->
+    <TextView
+        android:id="@+id/summaryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- TextView para mostrar el contador -->
+    <TextView
+        android:id="@+id/counterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botones para cerrar e imprimir -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Botn para cerrar la boleta -->
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cerrar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Botn para imprimir la boleta -->
+        <Button
+            android:id="@+id/printButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Imprimir"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>
