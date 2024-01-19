@@ -27,6 +27,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainReservas"
+            android:parentActivityName=".PrincipalActivity">
+            <!-- Agrega cualquier configuración adicional que puedas necesitar -->
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

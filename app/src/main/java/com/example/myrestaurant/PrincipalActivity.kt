@@ -12,6 +12,12 @@ class PrincipalActivity : AppCompatActivity() {
         setContentView(R.layout.activity_principal)
 
         val BtnMenu = findViewById<Button>(R.id.btnMenu)
+        val BtnReservas : Button = findViewById(R.id.butAmbiente)
+        BtnReservas.setOnClickListener {
+            // Abrir la actividad de reservas cuando se hace clic en el botón
+            val intent = Intent(this, MainReservas::class.java)
+            startActivity(intent)
+        }
 
         BtnMenu.setOnClickListener {
             val intent = Intent(this,MenuActivity::class.java)
