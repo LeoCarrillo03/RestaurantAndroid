@@ -25,11 +25,11 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="30dp"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/baloo"
                 android:gravity="center"
                 android:text="BIENVENIDOS"
                 android:textColor="#F6F6F6"
-                android:textSize="30sp" />
+                android:textSize="50sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -57,17 +57,17 @@
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="130dp"
-                android:layout_height="81dp"
+                android:layout_width="201dp"
+                android:layout_height="112dp"
                 android:layout_weight="1"
                 android:height="150dp"
                 android:backgroundTint="#F1E9E9"
                 android:bufferType="spannable"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/baloo"
                 android:gravity="center"
                 android:text="INGRESAR"
                 android:textColor="#018878"
-                android:textSize="16sp"
+                android:textSize="25sp"
                 app:iconTint="#018878" />
         </LinearLayout>
     </LinearLayout>
