@@ -23,6 +23,7 @@
                 android:layout_marginBottom="25dp"
                 android:orientation="horizontal">
 
+
                 <TextView
                     android:id="@+id/textTituloMenu"
                     android:layout_width="wrap_content"
@@ -30,7 +31,7 @@
                     android:layout_weight="1"
                     android:background="@android:drawable/checkbox_off_background"
                     android:backgroundTint="#1CBCAB"
-                    android:fontFamily="sans-serif-black"
+                    android:fontFamily="@font/baloo"
                     android:gravity="center"
                     android:text="MENU"
                     android:textColor="#FFFFFF"
@@ -64,7 +65,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
-                        android:fontFamily="sans-serif-black"
+                        android:fontFamily="@font/baloo"
                         android:text="Pollo Doradito + Sopa"
                         android:textColor="#FFFFFF" />
 
@@ -74,6 +75,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
+
                         android:text="Delicioso pollo a la braza , papas fritas con cremas + una sopa de verduras con fideo "
                         android:textColor="#FFFFFF" />
 
@@ -83,7 +85,7 @@
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="sans-serif-black"
+                        android:fontFamily="@font/baloo"
                         android:text="S/ 30.00"
                         android:textColor="#FFFFFF" />
 
@@ -95,6 +97,7 @@
                         android:layout_marginLeft="160dp"
                         android:layout_marginBottom="10dp"
                         android:backgroundTint="#FFFFFF"
+                        android:fontFamily="@font/baloo"
                         android:text="Agregar"
                         android:textColor="#1A937F" />
                 </LinearLayout>
@@ -140,7 +143,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
-                        android:fontFamily="sans-serif-black"
+                        android:fontFamily="@font/baloo"
                         android:text="Costillar de Cordero"
                         android:textColor="#FFFFFF" />
 
@@ -159,7 +162,7 @@
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="sans-serif-black"
+                        android:fontFamily="@font/baloo"
                         android:text="S/ 30.00"
                         android:textColor="#FFFFFF" />
 
@@ -171,6 +174,7 @@
                         android:layout_marginLeft="160dp"
                         android:layout_marginBottom="10dp"
                         android:backgroundTint="#FFFFFF"
+                        android:fontFamily="@font/baloo"
                         android:text="Agregar"
                         android:textColor="#1A937F" />
                 </LinearLayout>
@@ -216,7 +220,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
-                        android:fontFamily="sans-serif-black"
+                        android:fontFamily="@font/baloo"
                         android:text="Arroz con pato norteño🍛"
                         android:textColor="#FFFFFF" />
 
@@ -235,7 +239,7 @@
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="sans-serif-black"
+                        android:fontFamily="@font/baloo"
                         android:text="S/ 30.00"
                         android:textColor="#FFFFFF" />
 
@@ -246,6 +250,7 @@
                         android:layout_height="38dp"
                         android:layout_marginLeft="160dp"
                         android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/baloo"
                         android:backgroundTint="#FFFFFF"
                         android:text="Agregar"
                         android:textColor="#1A937F" />
@@ -292,7 +297,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
-                        android:fontFamily="sans-serif-black"
+                        android:fontFamily="@font/baloo"
                         android:text="Seco de Cabrito"
                         android:textColor="#FFFFFF" />
 
@@ -311,18 +316,19 @@
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="sans-serif-black"
+                        android:fontFamily="@font/baloo"
                         android:text="S/ 30.00"
                         android:textColor="#FFFFFF" />
 
                     <!-- Botn de agregar -->
                     <Button
-                        android:id="@+id/btnAdd4"
+                        android:id="@+id/btnAdd"
                         android:layout_width="wrap_content"
                         android:layout_height="38dp"
                         android:layout_marginLeft="160dp"
                         android:layout_marginBottom="10dp"
                         android:backgroundTint="#FFFFFF"
+                        android:fontFamily="@font/baloo"
                         android:text="Agregar"
                         android:textColor="#1A937F" />
                 </LinearLayout>
@@ -393,7 +399,7 @@
 
                     <!-- Botn de agregar -->
                     <Button
-                        android:id="@+id/btnAdd"
+                        android:id="@+id/btnAdd2"
                         android:layout_width="wrap_content"
                         android:layout_height="38dp"
                         android:layout_marginLeft="160dp"

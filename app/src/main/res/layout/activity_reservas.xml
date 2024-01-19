@@ -11,7 +11,9 @@
         android:background="@drawable/boton"
         android:gravity="center"
         android:padding="16dp"
-        tools:context=".ReservasActivity">
+        tools:context=".ReservasActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/textViewWelcome"
@@ -45,8 +47,8 @@
 
         <DatePicker
             android:id="@+id/datePicker"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_below="@id/textViewFecha"
             android:layout_marginTop="8dp"
             android:visibility="gone" />
@@ -62,8 +64,8 @@
 
         <TimePicker
             android:id="@+id/timePicker"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_below="@id/textViewHorario"
             android:layout_marginTop="8dp"
             android:is24HourView="true"
