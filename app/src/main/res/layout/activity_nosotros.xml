@@ -5,6 +5,10 @@
     android:orientation="vertical">
 
     <!-- Encabezado con Imagen y Texto Descriptivo -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

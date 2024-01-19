@@ -163,12 +163,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/baloo"
-                        android:text="S/ 30.00"
+                        android:text="S/ 25.00"
                         android:textColor="#FFFFFF" />
 
                     <!-- Botn de agregar -->
                     <Button
-                        android:id="@+id/btnAdd"
+                        android:id="@+id/btnAdd2"
                         android:layout_width="wrap_content"
                         android:layout_height="38dp"
                         android:layout_marginLeft="160dp"
@@ -221,7 +221,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
                         android:fontFamily="@font/baloo"
-                        android:text="Arroz con pato norteño🍛"
+                        android:text="Arroz con pato norteño"
                         android:textColor="#FFFFFF" />
 
                     <!-- TextView para la descripcin del plato -->
@@ -240,12 +240,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/baloo"
-                        android:text="S/ 30.00"
+                        android:text="S/ 35.00"
                         android:textColor="#FFFFFF" />
 
                     <!-- Botn de agregar -->
                     <Button
-                        android:id="@+id/btnAdd"
+                        android:id="@+id/btnAdd3"
                         android:layout_width="wrap_content"
                         android:layout_height="38dp"
                         android:layout_marginLeft="160dp"
@@ -317,12 +317,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/baloo"
-                        android:text="S/ 30.00"
+                        android:text="S/ 35.00"
                         android:textColor="#FFFFFF" />
 
                     <!-- Botn de agregar -->
                     <Button
-                        android:id="@+id/btnAdd"
+                        android:id="@+id/btnAdd4"
                         android:layout_width="wrap_content"
                         android:layout_height="38dp"
                         android:layout_marginLeft="160dp"
@@ -394,12 +394,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="sans-serif-black"
-                        android:text="S/ 30.00"
+                        android:text="S/ 15.00"
                         android:textColor="#FFFFFF" />
 
                     <!-- Botn de agregar -->
                     <Button
-                        android:id="@+id/btnAdd2"
+                        android:id="@+id/btnAdd5"
                         android:layout_width="wrap_content"
                         android:layout_height="38dp"
                         android:layout_marginLeft="160dp"
@@ -470,12 +470,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="sans-serif-black"
-                        android:text="S/ 30.00"
+                        android:text="S/ 20.00"
                         android:textColor="#FFFFFF" />
 
                     <!-- Botn de agregar -->
                     <Button
-                        android:id="@+id/btnAdd2"
+                        android:id="@+id/btnAdd6"
                         android:layout_width="wrap_content"
                         android:layout_height="38dp"
                         android:layout_marginLeft="160dp"
@@ -506,7 +506,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/totalPriceTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="80dp"

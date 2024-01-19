@@ -41,11 +41,6 @@
             <!-- Puedes agregar ms configuraciones aqu si es necesario -->
         </activity>
 
-        <activity android:name="com.example.myrestaurant.NosotrosActivity">
-            <!-- Puedes agregar ms configuraciones aqu si es necesario -->
-        </activity>
-
-
 
         <meta-data
             android:name="preloaded_fonts"

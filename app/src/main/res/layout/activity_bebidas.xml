@@ -49,7 +49,7 @@
 
                     <!-- ImageView para la imagen del plato -->
                     <ImageView
-                        android:id="@+id/pollo_dorado"
+                        android:id="@+id/pisco"
                         android:layout_width="108dp"
                         android:layout_height="106dp"
                         android:layout_margin="10dp"
@@ -170,7 +170,7 @@
 
                         <!-- Botn de agregar -->
                         <Button
-                            android:id="@+id/btnAdd"
+                            android:id="@+id/btnAdd2"
                             android:layout_width="wrap_content"
                             android:layout_height="38dp"
                             android:layout_marginLeft="160dp"
@@ -246,7 +246,7 @@
 
                         <!-- Botn de agregar -->
                         <Button
-                            android:id="@+id/btnAdd"
+                            android:id="@+id/btnAdd3"
                             android:layout_width="wrap_content"
                             android:layout_height="38dp"
                             android:layout_marginLeft="160dp"
@@ -398,7 +398,7 @@
 
                         <!-- Botn de agregar -->
                         <Button
-                            android:id="@+id/btnAdd"
+                            android:id="@+id/btnAdd5"
                             android:layout_width="wrap_content"
                             android:layout_height="38dp"
                             android:layout_marginLeft="160dp"
@@ -474,7 +474,7 @@
 
                         <!-- Botn de agregar -->
                         <Button
-                            android:id="@+id/btnAdd2"
+                            android:id="@+id/btnAdd6"
                             android:layout_width="wrap_content"
                             android:layout_height="38dp"
                             android:layout_marginLeft="160dp"
@@ -500,6 +500,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/boletaLayout"
                     android:layout_width="match_parent"
                     android:layout_height="188dp"
                     android:orientation="horizontal">

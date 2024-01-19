@@ -56,7 +56,7 @@ class MenuActivity : AppCompatActivity() {
             addItemToCart(item5)
         }
 
-        val btnPagar: Button = findViewById(R.id.button2)
+        val btnPagar: Button = findViewById(R.id.totalPriceTextView)
         btnPagar.setOnClickListener {
             showSummaryDialog()
         }

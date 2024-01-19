@@ -11,9 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_marginBottom="19dp"/>
 
     <!-- TextView para mostrar el contador -->
     <TextView
@@ -39,7 +39,7 @@
             android:layout_weight="1"
             android:text="Cerrar"
             android:layout_gravity="center_horizontal"
-            android:layout_marginEnd="8dp"/>
+            android:layout_marginEnd="5dp"/>
 
         <!-- Botn para imprimir la boleta -->
         <Button
@@ -49,6 +49,6 @@
             android:layout_weight="1"
             android:text="Imprimir"
             android:layout_gravity="center_horizontal"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="5dp"/>
     </LinearLayout>
 </LinearLayout>

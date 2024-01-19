@@ -68,7 +68,6 @@
             android:layout_height="25dp"
             android:layout_below="@id/textViewHorario"
             android:layout_marginTop="8dp"
-            android:is24HourView="true"
             android:visibility="gone" />
 
         <Button
