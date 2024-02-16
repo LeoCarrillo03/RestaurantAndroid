@@ -21,6 +21,9 @@ class PrincipalActivity : AppCompatActivity() {
 
         val btnBebidas = findViewById<Button>(R.id.btnBebidas)
 
+        val btnUbicacion = findViewById<Button>(R.id.btnUbicacion)
+
+
         BtnReservas.setOnClickListener {
             // Abrir la actividad de reservas cuando se hace clic en el botón
             val intent = Intent(this, MainReservas::class.java)
@@ -39,6 +42,11 @@ class PrincipalActivity : AppCompatActivity() {
 
         btnNosotros.setOnClickListener {
             val intent = Intent(this, NosotrosActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnUbicacion.setOnClickListener{
+            val intent = Intent(this, MapsActivity::class.java)
             startActivity(intent)
         }
     }

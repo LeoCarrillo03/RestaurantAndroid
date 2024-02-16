@@ -59,63 +59,59 @@ android:layout_height="match_parent">
         android:textColorHint="#19E8CE"
         android:textColorLink="#C3C3C3" />
 
-    <TextView
-        android:id="@+id/FechaRe"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/TextMesas"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/NumPersonasRe"
-        android:layout_marginStart="50dp"
+        android:layout_below="@id/editTextHorario"
         android:layout_marginTop="8dp"
         android:background="@drawable/border_nosotros"
         android:fontFamily="@font/baloo"
         android:gravity="center"
-        android:padding="5dp"
-        android:text="Fecha de Reserva"
+        android:hint="Número de Mesa"
+        android:inputType="number"
+        android:textColor="#CFDCDA" />
+
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NumPersonasRe"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_nosotros"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:hint="Fecha de Reserva (DD/MM/AAAA)"
         android:textColor="#EBF3F2"
         android:textColorLink="#F4FEFF" />
 
-    <DatePicker
-        android:id="@+id/datePicker"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_below="@id/FechaRe"
-        android:layout_marginTop="8dp"
-        android:visibility="gone" />
-
-
-    <TextView
-        android:id="@+id/HorarioRe"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editTextHorario"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/datePicker"
-        android:layout_marginStart="205dp"
-        android:layout_marginTop="-33dp"
+        android:layout_below="@id/editTextFecha"
+        android:layout_marginTop="8dp"
         android:background="@drawable/border_nosotros"
         android:fontFamily="@font/baloo"
-        android:padding="5dp"
-        android:text="Horario de Reserva"
+        android:gravity="center"
+        android:hint="Horario de Reserva (HH:MM)"
         android:textColor="#CFDCDA" />
 
-    <TimePicker
-        android:id="@+id/timePicker"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_below="@id/HorarioRe"
-        android:layout_marginTop="8dp"
-        android:visibility="gone" />
 
     <Button
         android:id="@+id/btnReservar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/timePicker"
+        android:layout_below="@id/editTextHorario"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="25dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/baloo"
-        android:text="Mostrar Selector de Horario"
+        android:text="Confirmar reserva "
         android:textColor="#018978" />
+
 
 </RelativeLayout>
 

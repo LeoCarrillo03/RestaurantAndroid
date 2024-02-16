@@ -27,7 +27,6 @@ class AuthActivity : AppCompatActivity() {
         var passwordEditText = findViewById<EditText>(R.id.passwordEditText)
         var loginButton = findViewById<Button>(R.id.loginButton)
 
-
         signUpButton.setOnClickListener {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {
                 FirebaseAuth.getInstance()
