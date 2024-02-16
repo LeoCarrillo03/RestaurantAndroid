@@ -17,6 +17,7 @@ class BebidasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bebidas)
 
+        totalTextView = findViewById(R.id.totalPriceTextView1)
 
         // Resto de tu código...
 
@@ -32,12 +33,30 @@ class BebidasActivity : AppCompatActivity() {
             agregarBebida(bebida)
         }
 
-        // Agrega más botones según tus bebidas...
-
-        val btnPagar: Button = findViewById(R.id.button2)
-        btnPagar.setOnClickListener {
-            mostrarResumenDialog()
+        val btnAdd3: Button = findViewById(R.id.btnAdd3)
+        btnAdd3.setOnClickListener {
+            val bebida = Bebida("Piña Colada", 25.00)
+            agregarBebida(bebida)
         }
+
+        val btnAdd4: Button = findViewById(R.id.btnAdd4)
+        btnAdd4.setOnClickListener {
+            val bebida = Bebida("Chicha Morada", 10.00)
+            agregarBebida(bebida)
+        }
+
+        val btnAdd5: Button = findViewById(R.id.btnAdd5)
+        btnAdd5.setOnClickListener {
+            val bebida = Bebida("Inka Kola", 4.00)
+            agregarBebida(bebida)
+        }
+
+        val btnAdd6: Button = findViewById(R.id.btnAdd6)
+        btnAdd6.setOnClickListener {
+            val bebida = Bebida("Cerveza Cusquea", 15.00)
+            agregarBebida(bebida)
+        }
+
     }
 
     private lateinit var resumenDialog: Dialog

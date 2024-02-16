@@ -14,17 +14,18 @@
         android:layout_height="wrap_content">
 
         <!-- Imagen de Fondo -->
+        <!-- Imagen de Fondo -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:background="@drawable/fondo"
-            android:scaleType="centerCrop"
-            android:src="@drawable/fondo" />
+            android:src="@drawable/fondo"
+            android:scaleType="centerCrop" />
 
         <!-- Capa Gris Semitransparente -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="180dp" />
+            android:layout_height="180dp"
+            android:background="#80000000" />
 
         <!-- Texto Descriptivo -->
         <TextView
@@ -35,7 +36,7 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:text="¡Bienvenido a Vaya Caldo!\n Disfruta de la exquisita cocina peruana en un ambiente único. ¡Sabores auténticos que deleitarán tu paladar!"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="#ECE5E5"
             android:textSize="16sp" />
 
     </FrameLayout>

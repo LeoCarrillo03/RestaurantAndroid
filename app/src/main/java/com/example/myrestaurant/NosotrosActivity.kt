@@ -17,7 +17,7 @@ class NosotrosActivity : AppCompatActivity() {
         // Establece un listener para el clic del botón
         btnVolverInicio.setOnClickListener {
             // Crea un Intent para ir a la actividad principal (cambia MainActivity::class.java según tu caso)
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, AuthActivity::class.java)
 
             // Inicia la actividad principal
             startActivity(intent)
