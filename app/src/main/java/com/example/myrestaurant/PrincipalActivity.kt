@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.content.Intent
 import android.widget.Button;
 
-
+enum class ProviderType {
+    BASIC
+}
 class PrincipalActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

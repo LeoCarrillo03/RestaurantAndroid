@@ -4,19 +4,75 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button;
+import android.widget.EditText
+import androidx.appcompat.app.AlertDialog
+import com.google.firebase.auth.FirebaseAuth
+import java.security.Provider
 
 class AuthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
 
-        val button = findViewById<Button>(R.id.button)
+        //Setup
+        setup()
+    }
+    private fun setup (){
+        title = "Autenticación"
 
-        button.setOnClickListener {
-            val intent = Intent(this, PrincipalActivity::class.java)
-            startActivity(intent)
+        var signUpButton = findViewById<Button>(R.id.signUpButton)
+        var emailEditText = findViewById<EditText>(R.id.emailEditText)
+        var passwordEditText = findViewById<EditText>(R.id.passwordEditText)
+        var loginButton = findViewById<Button>(R.id.loginButton)
+
+
+        signUpButton.setOnClickListener {
+            if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {
+                FirebaseAuth.getInstance()
+                    .createUserWithEmailAndPassword(emailEditText.text.toString(),
+                        passwordEditText.text.toString()
+                    ).addOnCompleteListener() {
+                        if (it.isSuccessful) {
+                            showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
+                        } else {
+                            showAlert()
+                        }
+                    }
+            }
+        }
+        loginButton.setOnClickListener {
+            if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {
+                FirebaseAuth.getInstance()
+                    .signInWithEmailAndPassword(emailEditText.text.toString(),
+                        passwordEditText.text.toString()
+                    ).addOnCompleteListener() {
+                        if (it.isSuccessful) {
+                            showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
+                        } else {
+                            showAlert()
+                        }
+                    }
+            }
         }
 
+    }
+
+    private fun showAlert(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Se a producido un error autentificando al usuario")
+        builder.setPositiveButton("aceptar", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+
+    private fun showHome(email: String, provider: ProviderType){
+            val homeIntent = Intent (this,PrincipalActivity::class.java).apply {
+                putExtra("Email", email)
+                putExtra("provider", provider.name)
+            }
+        startActivity(homeIntent)
     }
 }
