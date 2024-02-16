@@ -2,7 +2,6 @@
 
 package com.example.myrestaurant
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -11,8 +10,11 @@ import android.widget.Button
 import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.TimePicker
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+
+import com.google.firebase.database.FirebaseDatabase
 
 class MainReservas : AppCompatActivity() {
 
@@ -25,10 +27,10 @@ class MainReservas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reservas)
 
-        val buttonMostrarPicker: Button = findViewById(R.id.buttonMostrarPicker)
+        val buttonMostrarPicker: Button = findViewById(R.id.btnReservar)
         datePicker = findViewById(R.id.datePicker)
         timePicker = findViewById(R.id.timePicker)
-        editTextNumeroPersonas = findViewById(R.id.editTextNumeroPersonas)
+        editTextNumeroPersonas = findViewById(R.id.NumPersonasRe)
 
         buttonMostrarPicker.setOnClickListener {
             showDateTimePickers()
@@ -51,11 +53,20 @@ class MainReservas : AppCompatActivity() {
             TODO("VERSION.SDK_INT < M")
         }
 
-        val intent = Intent(this, AdminActivity::class.java).apply {
-            putExtra("numeroPersonas", numeroPersonas)
-            putExtra("fechaReserva", fechaReserva)
-            putExtra("horarioReserva", horarioReserva)
-        }
-        startActivity(intent)
+        // Guardar datos a Firebase
+        val database = FirebaseDatabase.getInstance("https://projectrestaurant-1abd4-default-rtdb.firebaseio.com/")
+        val referenciaReservas = database.getReference("reservas")
+
+        val nuevaReserva = referenciaReservas.push()
+
+        nuevaReserva.child("numPersonas").setValue(numeroPersonas)
+        nuevaReserva.child("fecha").setValue(fechaReserva)
+        nuevaReserva.child("horario").setValue(horarioReserva)
+            .addOnSuccessListener {
+                Toast.makeText(this, "Reserva realizada con éxito", Toast.LENGTH_SHORT).show()
+            }
+            .addOnFailureListener {
+                Toast.makeText(this, "Error al realizar la reseva", Toast.LENGTH_SHORT).show()
+            }
     }
 }
