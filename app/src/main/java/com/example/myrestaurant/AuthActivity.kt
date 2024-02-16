@@ -31,17 +31,26 @@ class AuthActivity : AppCompatActivity() {
         signUpButton.setOnClickListener {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {
                 FirebaseAuth.getInstance()
-                    .createUserWithEmailAndPassword(emailEditText.text.toString(),
+                    .createUserWithEmailAndPassword(
+                        emailEditText.text.toString(),
                         passwordEditText.text.toString()
-                    ).addOnCompleteListener() {
-                        if (it.isSuccessful) {
-                            showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
+                    ).addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            showSuccessMessage("El usuario se registró correctamente")
                         } else {
-                            showAlert()
+                            val errorMessage = task.exception?.message
+                            if (errorMessage?.contains("already in use") == true) {
+                                // Usuario ya está registrado
+                                showErrorMessage("El usuario ya existe")
+                            } else {
+                                // Otro error
+                                showAlert()
+                            }
                         }
                     }
             }
         }
+
         loginButton.setOnClickListener {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {
                 FirebaseAuth.getInstance()
@@ -74,5 +83,22 @@ class AuthActivity : AppCompatActivity() {
                 putExtra("provider", provider.name)
             }
         startActivity(homeIntent)
+    }
+    private fun showSuccessMessage(message: String) {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Registro exitoso")
+        builder.setMessage(message)
+        builder.setPositiveButton("Aceptar", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+
+    private fun showErrorMessage(message: String) {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage(message)
+        builder.setPositiveButton("Aceptar", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
     }
 }
