@@ -17,13 +17,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="175dp"
+            android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textTitulo"
                 android:layout_width="match_parent"
                 android:layout_height="101dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="50dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/baloo"
                 android:gravity="center"
@@ -34,10 +35,10 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="400dp"
-            android:layout_height="280dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_gravity="center"
-            android:layout_marginTop="-80dp"
+            android:layout_marginTop="-45dp"
             android:layout_marginBottom="50dp"
             android:background="#00BD2C2C"
             app:srcCompat="@drawable/logo" />
@@ -54,10 +55,14 @@
                 android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/border_nosotros"
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
+                android:padding="10dp"
                 android:textColor="#F8F8F8"
+                android:textColorHighlight="#F4F4F4"
                 android:textColorHint="#E8E5E5" />
 
             <Space
@@ -68,9 +73,12 @@
                 android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"
                 android:ems="10"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
+                android:padding="10dp"
                 android:textColor="#FFFFFF"
                 android:textColorHint="#E8E5E5" />
 
@@ -89,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:backgroundTint="#FBFFFF"
-                    android:text="Registrar"
+                    android:text="REGISTRARSE"
                     android:textColor="#018978" />
 
                 <Space
@@ -99,10 +107,10 @@
                 <Button
                     android:id="@+id/loginButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
                     android:backgroundTint="#FBFFFF"
-                    android:text="Acceder"
+                    android:text="INGRESAR"
                     android:textColor="#018978" />
             </LinearLayout>
         </LinearLayout>

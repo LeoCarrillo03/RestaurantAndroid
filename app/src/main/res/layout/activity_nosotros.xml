@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#018878"
     android:orientation="vertical">
 
     <!-- Encabezado con Imagen y Texto Descriptivo -->
@@ -18,8 +19,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:src="@drawable/fondo"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo" />
 
         <!-- Capa Gris Semitransparente -->
         <View
@@ -33,10 +34,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="@font/baloo"
             android:text="¡Bienvenido a Vaya Caldo!\n Disfruta de la exquisita cocina peruana en un ambiente único. ¡Sabores auténticos que deleitarán tu paladar!"
             android:textAlignment="center"
-            android:textColor="#ECE5E5"
+            android:textColor="#F4FFF9"
             android:textSize="16sp" />
 
     </FrameLayout>
@@ -45,11 +46,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#018878"
         android:orientation="vertical"
-        android:background="@drawable/bg_gradient"
         android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:paddingTop="20dp">
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp">
 
         <!-- Sección de Misión -->
         <RelativeLayout
@@ -61,19 +62,21 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/mision"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentEnd="true"
+                android:background="#CCC1C1"
+                android:src="@drawable/mision" />
 
             <!-- Texto de Misión -->
             <TextView
                 android:id="@+id/textMision"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Misión: Proporcionar experiencias gastronómicas excepcionales a nuestros fieles y futuros clientes."
-                android:textColor="#000000"
-                android:textSize="14sp"
                 android:layout_marginEnd="60dp"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/baloo"
+                android:text="Misión: Proporcionar experiencias gastronómicas excepcionales a nuestros fieles y futuros clientes."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
         </RelativeLayout>
 
         <!-- Sección de Visión -->
@@ -87,26 +90,28 @@
                 android:id="@+id/textVision"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Visión: Ser reconocidos como el mejor restaurante de la región, destacando por excelencia y autenticidad culinaria."
-                android:textColor="#000000"
-                android:textSize="14sp"
                 android:layout_marginStart="70dp"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/baloo"
+                android:text="Visión: Ser reconocidos como el mejor restaurante de la región, destacando por excelencia y autenticidad culinaria."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
 
             <!-- Imagen de Visión -->
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/vision"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:background="#CCC1C1"
+                android:src="@drawable/vision" />
         </RelativeLayout>
 
         <!-- Separador decorativo -->
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:background="#B2DFDB" />
 
@@ -117,49 +122,35 @@
             android:layout_marginTop="20dp">
 
             <!-- Título Nuestro Equipo -->
-            <TextView
-                android:id="@+id/tituloNuestroEquipo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nuestro Equipo"
-                android:textColor="#FAFAFA"
-                android:textSize="16sp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:background="@drawable/border"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:layout_marginTop="5dp"/>
 
             <!-- Imagen de Nuestro Equipo -->
             <ImageView
                 android:id="@+id/imagenNuestroEquipo"
                 android:layout_width="300dp"
                 android:layout_height="150dp"
-                android:src="@drawable/equipo"
                 android:layout_below="@id/tituloNuestroEquipo"
                 android:layout_centerHorizontal="true"
-                android:background="#FFFFFF"
                 android:layout_marginStart="80dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="80dp"
-                android:layout_marginTop="8dp"/>
+                android:background="#FFFFFF"
+                android:src="@drawable/equipo" />
 
             <!-- Texto de Nuestro Equipo -->
             <TextView
                 android:id="@+id/textNuestroEquipo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Conoce al talentoso equipo que hace posible cada experiencia gastronómica."
-                android:textColor="#000000"
-                android:textSize="16sp"
                 android:layout_below="@id/imagenNuestroEquipo"
-                android:layout_marginTop="8dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:gravity="center"/>
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Conoce al talentoso equipo que hace posible cada experiencia gastronómica."
+                android:textColor="#D8D4D4"
+                android:textSize="16sp" />
         </RelativeLayout>
 
         <!-- Botón para Volver al Inicio -->
@@ -167,11 +158,12 @@
             android:id="@+id/btnVolverInicio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Volver al Inicio"
             android:layout_gravity="center"
+            android:layout_marginTop="5dp"
             android:backgroundTint="#004D40"
-            android:textColor="@android:color/background_light"
-            android:layout_marginTop="5dp"/>
+            android:fontFamily="@font/baloo"
+            android:text="Volver al Inicio"
+            android:textColor="@android:color/background_light" />
 
     </LinearLayout>
 
